@@ -50,7 +50,7 @@ See: https://github.com/openai/gym/blob/master/gym/envs/toy_text/frozen_lake.py
 Q = np.zeros([env.observation_space.n,env.action_space.n]) # Q-table matrix
 
 # Set learning hyperparameters
-lr = .8 # learning rate coefficient: this defines how quickly/slowly the agent learns. (We don't have to update the Q-table with the full value of the Bellman equation, it's better to learn slower.)
+lr = .8 # learning rate coefficient: this defines how quickly/slowly the agent learns. If we learn too fast, we might miss the global optimum, too slowly and it will take a long time.
 gamma = .95 # discount factor: this defines how short/long-term oriented the agent is
 num_episodes = 2000 # number of times to run the simulation and update the Q-table
 
