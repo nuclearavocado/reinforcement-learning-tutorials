@@ -28,7 +28,7 @@ The table size is 16x4: 16 observable states (as the environment is a 4x4 grid),
 The states are linearised into the rows of the Q-table, while the columns define the actions.
 Each entry defines the reward for perfoming the action in the column, at the location in the row.
 So the Q-table looks like this:
-             L   D   R   U
+             U   R   D   L
 1  (1,1) S:  x   x   x   x
 2  (1,2) F:  x   x   x   x
 3  (1,3) F:  x   x   x   x
